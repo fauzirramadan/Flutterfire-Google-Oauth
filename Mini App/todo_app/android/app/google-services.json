@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "171888871474",
+    "project_id": "skill-tes-ip",
+    "storage_bucket": "skill-tes-ip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171888871474:android:ccaf0c51797904e414d42b",
+        "android_client_info": {
+          "package_name": "com.example.todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171888871474-4g5tj0tp30ggb4knudj5gph9pf10ehno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUGCLTvNKVdnSA8lJpaiJHkFKQndlX81Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171888871474-4g5tj0tp30ggb4knudj5gph9pf10ehno.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "171888871474-liee3p3f3bga9b21pmbtru01ca76qsr6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.miniApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
