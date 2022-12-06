@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
               log(snapshot.data.toString());
             }
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               navigatorKey: navigatorKey,
               scaffoldMessengerKey: scaffoldMessengerKey,
               title: 'Flutter Demo',

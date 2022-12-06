@@ -17,7 +17,10 @@ class SettingsPage extends StatelessWidget {
             return ListTile(
               onTap: () => bloc.logOut(),
               title: const Text("Log Out"),
-              trailing: const Icon(Icons.logout),
+              trailing: const Icon(
+                Icons.logout,
+                color: Colors.red,
+              ),
             );
           })
         ],
