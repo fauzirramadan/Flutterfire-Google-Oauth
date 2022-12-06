@@ -8,6 +8,8 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:todo_app/utils/nav_helper.dart';
 import 'package:todo_app/utils/notif_helper.dart';
 import 'package:todo_app/view/home.dart';
+import 'package:todo_app/view/login.dart';
+import 'package:todo_app/view/my_tab.dart';
 
 class AuthProvider extends ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -32,7 +34,8 @@ class AuthProvider extends ChangeNotifier {
       );
       isLoading = false;
       notifyListeners();
-      Nav.toAll(const HomePage());
+      NotifUtils.showSnackbar("Berhasil Login", backgroundColor: Colors.purple);
+      Nav.toAll(const MyTab());
       return await _auth.signInWithCredential(credential);
     } on FirebaseAuthException catch (e, st) {
       if (kDebugMode) {
@@ -51,5 +54,6 @@ class AuthProvider extends ChangeNotifier {
   Future<void> logOut() async {
     await _googleSignIn.signOut();
     await _auth.signOut();
+    Nav.toAll(const LoginPage());
   }
 }

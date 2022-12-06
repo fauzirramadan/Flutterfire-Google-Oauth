@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:todo_app/firebase_options.dart';
 import 'package:todo_app/provider/auth.dart';
 import 'package:todo_app/view/login.dart';
+import 'package:todo_app/view/my_tab.dart';
 
 import 'view/home.dart';
 
@@ -40,10 +41,9 @@ class MyApp extends StatelessWidget {
               scaffoldMessengerKey: scaffoldMessengerKey,
               title: 'Flutter Demo',
               theme: ThemeData(
-                primarySwatch: Colors.blue,
+                primarySwatch: Colors.purple,
               ),
-              home:
-                  snapshot.data != null ? const HomePage() : const LoginPage(),
+              home: snapshot.data != null ? const MyTab() : const LoginPage(),
             );
           });
     });
