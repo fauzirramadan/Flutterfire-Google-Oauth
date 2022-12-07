@@ -1,3 +1,3 @@
 # Flutterfire-Google-Oauth
 
-Todo App With Google Oauth Flutter + Firebase
+Todo App With Oauth Flutter + Firebase
